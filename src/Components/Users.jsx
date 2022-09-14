@@ -16,7 +16,7 @@ import axios from "axios";
 import {Search} from "@mui/icons-material";
 import AddUserDialogBox from "./AddUserDialogBox.jsx";
 
-const endPoint = 'http://localhost:4000';
+const endPoint = 'https://jsonplaceholder.typicode.com';
 
 const fetchUsers = async pageNumber => {
     return await axios.get(`${endPoint}/users?_limit=4&_page=${pageNumber}`)
